@@ -21,7 +21,7 @@ const Hero = () => {
           <div className="w-32 h-32 rounded-full bg-gradient-to-br from-neon-cyan to-neon-blue p-1 opacity-40">
             <div className="w-full h-full rounded-full bg-gray-900 overflow-hidden">
               <img
-                src="src/assets/images/asme.png"
+                src="/src/assets/images/asme.png"
                 alt="Floating"
                 className="w-full h-full object-cover"
               />
@@ -33,7 +33,7 @@ const Hero = () => {
           <div className="w-[100px] h-[100px] rounded-full bg-gradient-to-br from-neon-pink to-neon-purple p-1 opacity-40">
             <div className="w-full h-full rounded-full bg-gray-900 overflow-hidden">
               <img
-                src="src/assets/images/me1.png"
+                src="/src/assets/images/me1.png"
                 alt="Floating"
                 className="w-full h-full object-cover"
               />
