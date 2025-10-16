@@ -21,7 +21,7 @@ const Hero = () => {
           <div className="w-32 h-32 rounded-full bg-gradient-to-br from-neon-cyan to-neon-blue p-1 opacity-40">
             <div className="w-full h-full rounded-full bg-gray-900 overflow-hidden">
               <img
-                src="/assets/images/asme.png"
+                src="/images/asme.png"
                 alt="Floating"
                 className="w-full h-full object-cover"
               />
@@ -33,7 +33,7 @@ const Hero = () => {
           <div className="w-[100px] h-[100px] rounded-full bg-gradient-to-br from-neon-pink to-neon-purple p-1 opacity-40">
             <div className="w-full h-full rounded-full bg-gray-900 overflow-hidden">
               <img
-                src="/assets/images/me1.png"
+                src="/images/me1.png"
                 alt="Floating"
                 className="w-full h-full object-cover"
               />
@@ -45,7 +45,7 @@ const Hero = () => {
           <div className="w-28 h-28 rounded-full bg-gradient-to-br from-neon-green to-neon-cyan p-1 opacity-40">
             <div className="w-full h-full rounded-full bg-gray-900 overflow-hidden">
               <img
-                src="/assets/images/meLight.jpg"
+                src="/images/meLight.jpg"
                 alt="Floating"
                 className="w-full h-full object-cover"
               />
@@ -57,7 +57,7 @@ const Hero = () => {
           <div className="w-36 h-36 rounded-full bg-gradient-to-br from-neon-blue to-neon-cyan p-1 opacity-40">
             <div className="w-full h-full rounded-full bg-gray-900 overflow-hidden">
               <img
-                src="/assets/images/meh.jpg"
+                src="/images/meh.jpg"
                 alt="Floating"
                 className="w-full h-full object-cover"
               />
@@ -82,7 +82,7 @@ const Hero = () => {
               <div className="w-48 h-48 rounded-full bg-gradient-to-br from-neon-cyan via-neon-blue to-neon-pink p-1 animate-glow">
                 <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center overflow-hidden">
                   <img
-                    src="/assets/images/me.jpg"
+                    src="/images/me.jpg"
                     alt="Profile"
                     className="w-full h-full object-cover rounded-full"
                   />
