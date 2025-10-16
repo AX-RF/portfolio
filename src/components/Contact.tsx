@@ -217,7 +217,7 @@ const Contact = () => {
                   className="flex items-center gap-4 rounded-xl p-4 hover:bg-green-200/10 transition-colors cursor-pointer group"
                 >
                   <img
-                    src="/src/assets/images/asme.png"
+                    src="/images/asme.png"
                     alt="Developer"
                     className="w-16 h-16 rounded-full border-2 border-green-400 group-hover:border-green-400 transition-colors"
                     onError={(e) => {

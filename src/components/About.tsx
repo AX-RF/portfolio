@@ -59,7 +59,7 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-neon-cyan via-neon-blue to-neon-pink rounded-3xl blur-xl opacity-50 animate-pulse"></div>
               <div className="relative bg-gray-800/50 backdrop-blur-sm rounded-3xl p-2 border border-neon-cyan/30">
                 <img
-                  src="src/assets/images/Best.jpg"
+                  src="/images/Best.jpg"
                   alt="Profile"
                   className="w-full h-auto rounded-2xl object-cover"
                 />
@@ -74,7 +74,7 @@ const About = () => {
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 lg:gap-10 mt-6 px-4">
   <a
-    href="src\assets\Faysal_Elalaoui_Developer_App.pdf"
+    href="/Faysal_Elalaoui_Developer_App.pdf"
     download
     className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 lg:gap-5 px-6 sm:px-8 lg:px-10 py-3 sm:py-3.5 bg-gradient-to-r from-neon-cyan to-neon-blue text-gray-900 text-sm sm:text-base font-bold rounded-xl hover:shadow-[0_0_30px_rgba(34,211,238,0.6)] hover:scale-105 transition-all duration-300 overflow-hidden"
   >
@@ -86,7 +86,7 @@ const About = () => {
   </a>
 
 <a
-    href="src\assets\Faysal_Elalaoui_Developer_App.pdf"
+    href="/Faysal_Elalaoui_Developer_App.pdf"
     target="_blank"
     rel="noopener noreferrer"
     className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 lg:gap-5 px-6 sm:px-8 lg:px-10 py-3 sm:py-3.5 bg-gray-800/80 backdrop-blur-sm text-white text-sm sm:text-base font-bold rounded-xl border-2 border-neon-pink hover:bg-gray-800 hover:shadow-[0_0_30px_rgba(236,72,153,0.6)] hover:scale-105 transition-all duration-300 overflow-hidden"

@@ -326,7 +326,7 @@ const Projects = () => {
                     className="flex items-center gap-4 flex-1 cursor-pointer"
                   >
                     <img
-                      src="\src\assets\images\me1.png"
+                      src="/images/me1.png"
                       alt="Developer"
                       className="w-16 h-16 rounded-full border-2 border-cyan-400 group-hover:border-cyan-300 transition-colors"
                       onError={(e) => {
@@ -343,7 +343,7 @@ const Projects = () => {
                     </div>
                   </a>
                   <a
-                    href="src\assets\Faysal_Elalaoui_Developer_App.pdf"
+                    href="/Faysal_Elalaoui_Developer_App.pdf"
                     download
                     className="flex items-center gap-2 px-5 py-2.5 bg-cyan-500 text-gray-900 font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-400/50 hover:scale-105 transition-all duration-300 whitespace-nowrap"
                   >
