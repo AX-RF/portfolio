@@ -151,48 +151,60 @@ const Skills = () => {
         },
       ]
     },
-    {
-      icon: <Palette size={40} />,
-      title: 'UI/UX Design',
-      description: 'Figma, HTML, CSS, Bootstrap, React',
-      color: 'pink',
-      detailedDescription: 'Passionate about creating intuitive and visually appealing user interfaces using modern frameworks like React and Bootstrap. Skilled in wireframing, prototyping, and implementing designs that enhance user experience. Strong understanding of design principles, color theory, and accessibility standards.',
-      technologies: [
-        { 
-          name: 'Figma', 
-          logo: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
-          description: 'A collaborative interface design tool for creating user interfaces, prototypes, and design systems. Figma is web-based and enables real-time collaboration between designers and developers.'
-        },
-        { 
-          name: 'HTML5', 
-          logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg',
-          description: 'The standard markup language for creating web pages. HTML5 introduces semantic elements, multimedia support, and APIs for building modern, feature-rich web applications.'
-        },
-        { 
-          name: 'CSS3', 
-          logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg',
-          description: 'The latest evolution of CSS, used for styling web pages. CSS3 introduces powerful features like animations, transitions, flexbox, grid layouts, and responsive design capabilities.'
-        },
-        { 
-          name: 'Bootstrap', 
-          logo: 'https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg',
-          description: 'The world\'s most popular front-end framework for building responsive, mobile-first websites. Bootstrap provides pre-built components, grid system, and utilities for rapid development.'
-        },
-        { 
-          name: 'React', 
-          logo: 'https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg',
-          description: 'A JavaScript library for building user interfaces. React allows developers to create reusable UI components and manage application state efficiently with a virtual DOM for optimal performance.'
-        },
-        { 
-          name: 'Canva', 
-          logo: 'https://www.vectorlogo.zone/logos/canva/canva-icon.svg',
-          description: 'An easy-to-use graphic design platform for creating social media graphics, presentations, posters, and other visual content. Canva offers thousands of templates and design elements.'
-        },
-      ]
+    // UI/UX Design - Focus on design tools and principles
+{
+  icon: <Palette size={40} />,
+  title: 'UI/UX Design',
+  description: 'Figma, Canva, Prototyping',
+  color: 'pink',
+  detailedDescription: 'Passionate about creating intuitive and visually appealing user interfaces. Skilled in wireframing, prototyping, and designing user experiences that delight users. Strong understanding of design principles, color theory, typography, and accessibility standards. Experienced in creating design systems and maintaining brand consistency.',
+  technologies: [
+    { 
+      name: 'Figma', 
+      logo: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
+      description: 'A collaborative interface design tool for creating user interfaces, prototypes, and design systems. Figma is web-based and enables real-time collaboration between designers and developers.'
     },
+    { 
+      name: 'Canva', 
+      logo: 'https://www.vectorlogo.zone/logos/canva/canva-icon.svg',
+      description: 'An easy-to-use graphic design platform for creating social media graphics, presentations, posters, and other visual content. Canva offers thousands of templates and design elements.'
+    },
+  ]
+},
+
+// Front-end Development - Focus on coding and implementation
+{
+  icon: <Code size={40} />, // You'll need to import Code from lucide-react
+  title: 'Front-end Development',
+  description: 'HTML, CSS, JavaScript, React, Bootstrap',
+  color: 'blue', // or any color that fits your design
+  detailedDescription: 'Experienced in building responsive, performant, and accessible web applications. Proficient in modern front-end frameworks and libraries, with a focus on clean code, component architecture, and best practices. Skilled in translating designs into pixel-perfect, interactive user interfaces.',
+  technologies: [
+    { 
+      name: 'HTML5', 
+      logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg',
+      description: 'The standard markup language for creating web pages. HTML5 introduces semantic elements, multimedia support, and APIs for building modern, feature-rich web applications.'
+    },
+    { 
+      name: 'CSS3', 
+      logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg',
+      description: 'The latest evolution of CSS, used for styling web pages. CSS3 introduces powerful features like animations, transitions, flexbox, grid layouts, and responsive design capabilities.'
+    },
+    { 
+      name: 'Bootstrap', 
+      logo: 'https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg',
+      description: 'The world\'s most popular front-end framework for building responsive, mobile-first websites. Bootstrap provides pre-built components, grid system, and utilities for rapid development.'
+    },
+    { 
+      name: 'React', 
+      logo: 'https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg',
+      description: 'A JavaScript library for building user interfaces. React allows developers to create reusable UI components and manage application state efficiently with a virtual DOM for optimal performance.'
+    },
+  ]
+},
     {
       icon: <Database size={40} />,
-      title: 'Backend',
+      title: 'Backend Development',
       description: 'MySQL, SQLite, Firebase, Supabase, Laravel',
       color: 'green',
       detailedDescription: 'Experienced in designing and implementing robust backend systems using Laravel and other modern frameworks. Proficient in database design, optimization, and management. Skilled in creating RESTful APIs and integrating third-party services for seamless data flow.',

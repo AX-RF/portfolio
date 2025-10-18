@@ -111,10 +111,10 @@ const About = () => {
             <div className="space-y-6">
               <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-neon-cyan/20">
                 <h3 className="text-2xl font-bold text-white mb-4">
-                  Hello, I'm a <span className="text-neon-cyan">Mobile App Developer</span>
+                  Hello, I'm a <span className="text-neon-cyan">Junior Mobile Apps Developer</span>
                 </h3>
                 <p className="text-gray-400 leading-relaxed mb-4">I'm currently a trainee in mobile app development at 
-                   <a href="https://cmc.ac.ma/fr/cmc-rabat-sale-kenitra" className='font-bold text-neon-blue'> Cités des Métiers et des Compétences</a>, passionate about creating beautiful and functional applications that make a 
+                   <a href="https://cmc.ac.ma/fr/cmc-rabat-sale-kenitra" className='font-bold text-neon-blue'> the City of Trades and Skills (CMC)</a>, passionate about creating beautiful and functional applications that make a 
                    difference in people's lives. My journey in tech started with a curiosity about how apps work,
                     and it has evolved into a full-fledged passion for mobile development.
                 </p>

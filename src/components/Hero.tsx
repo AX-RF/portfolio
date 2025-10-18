@@ -95,7 +95,7 @@ const Hero = () => {
             <span className=" text-neon-blue">Elallaoui Faysal</span>
           </h1>
           <h2 className="text-5xl md:text-2xl font-bold  mt-2">
-            <span className="text-neon-cyan text-glow">Mobile App </span>
+            <span className="text-neon-cyan text-glow">Junior Mobile Apps </span>
             <span className="text-white">Developer</span>
           </h2>
 
