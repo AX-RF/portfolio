@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Faysal Elallaoui</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <!-- Custom Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav id="nav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <!-- Brand/Logo -->
+      <a class="navbar-brand" href="#">
+        <span class="car">&lt;</span>
+        Elallaoui <br> Faysal
+        <span class="car">/&gt;</span>
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- CV Button -->
+        <button class="btn btn-download d-flex align-items-center" onclick="downloadCV()">
+          <img src="images/downloads.png" alt="Download CV">
+          Download CV
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Particles Background -->
+  <div id="tsparticles"></div>
+
+  <!-- Welcome Section -->
+  <section class="wlc-sec container-fluid py-5 fade-in">
+    <div class="row align-items-center justify-content-center">
+
+      <!-- Text -->
+      <div class="text col-lg-6 col-md-10 col-sm-10 mb-4 text-center text-lg-start">
+        <!-- <div class="myPic col-9 d-flex justify-content-center align-items-center"> -->
+        <img class="myPic" src="images/me1.png" alt="">
+        <!-- </div> -->
+        <h1>
+          Hi, I'm
+          <span class="myName">
+            <span>F</span><span>A</span><span>Y</span><span>S</span><span>A</span><span>L</span>
+            <span class="space"></span>
+            <span>E</span><span>L</span><span>A</span><span>L</span><span>L</span><span>A</span><span>O</span><span>U</span><span>I</span>
+          </span>
+        </h1>
+        <p class="lead">
+          Web development student passionate about building clean, functional, and secure web applications.
+        </p>
+
+        <!-- Buttons -->
+        <div class="d-flex flex-wrap justify-content-center justify-content-center gap-3 mt-3">
+          <button id="contact" class="btn d-flex align-items-center gap-2 px-3">
+            <img src="images/contact-us.png" alt="" style="width: 24px;">
+            Get In Touch
+          </button>
+
+          <button id="downloadCV" class="btn d-flex align-items-center gap-2 px-3" onclick="downloadCV()">
+            <img src="images/downloads.png" alt="Download CV" style="width: 24px;">
+            Download CV
+          </button>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="circleRight col-lg-6 col-md-8 col-sm-10 text-center">
+        <img src="images/me1.png" alt="Faysal Elallaoui" class="img-fluid rounded-circle">
+      </div>
+    </div>
+
+    <!-- Scroll Down -->
+    <div class="scroll col-12 d-flex justify-content-center ">
+      <a href="#about">
+        <img src="images/scroll.png" alt="Scroll down" style="width: 30px;">
+      </a>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section id="about" class="about container-fluid py-5 fade-in">
+    <h2 class="heading text-center mb-5 d-flex justify-content-center flex-wrap">
+      <span>A</span>
+      <span>B</span>
+      <span>O</span>
+      <span>U</span>
+      <span>T</span>
+    </h2>
+
+    <div class="row d-flex align-items-center justify-content-center ">
+      <!-- About Me -->
+      <div class="about-me col-lg-6 col-md-10 col-sm-12 mb-4">
+        <p class="title d-flex align-items-center">
+          <img src="images/asme.png" alt="" >
+          About Me
+        </p>
+        <p class="myText">
+          My journey in web development has equipped me with
+          solid skills in building dynamic and user-friendly websites.
+          I enjoy transforming ideas into digital experiences that balance functionality
+          and design. With a growing expertise in both frontend and backend development,
+          I approach each project with curiosity, creativity, and precision.
+          I value teamwork, continuous learning, and exploring new technologies to stay ahead
+          in the fast-evolving tech world.
+        </p>
+      </div>
+
+      <!-- Interests -->
+      <div class="col-lg-4 col-md-10 col-sm-12">
+        <div class="interests">
+          <p class="title d-flex align-items-center">
+            <img src="images/hobbies.png" alt="" class="me-2" >
+            Interests
+          </p>
+          <div class="row line d-flex justify-content-between">
+            <p class="col" style="width: 100%; margin-left: 30px;">
+
+              <img src="images/right-arrow.png" alt="">
+              Coffee
+
+            </p>
+            <p class="col" style="width: 100%; margin-left: 30px;">
+              <img src="images/right-arrow.png" alt="">
+              Coding
+            </p>
+          </div>
+          <div class="row line d-flex justify-content-between">
+            <p class="col" style="width: 100%; margin-left: 30px;">
+
+              <img src="images/right-arrow.png" alt="">
+              Travel
+
+            </p>
+            <p class="col" style="width: 100%; margin-left: 30px;">
+              <img src="images/right-arrow.png" alt="">
+              Music
+            </p>
+          </div>
+          <div class="row line d-flex ">
+            <p class="col" style="width: 100%; margin-left: 30px;">
+
+              <img src="images/right-arrow.png" alt="">
+              Learning
+
+            </p>
+            <p class="col" style="width: 100%; margin-left: 30px;">
+              <img src="images/right-arrow.png" alt="">
+              Creative
+            </p>
+          </div>
+        </div>
+
+        <!-- Icons -->
+        <div class="icon-links style-3">
+          <a href="#" class="icon-box">
+              <i class="fab fa-github"></i>
+          </a>
+          <a href="#" class="icon-box">
+              <i class="fas fa-envelope"></i>
+          </a>
+          <a href="#" class="icon-box">
+              <i class="fas fa-phone"></i>
+          </a>
+          <a href="#" class="icon-box">
+              <i class="fas fa-file-alt"></i>
+          </a>
+      </div>
+
+        <!-- <div class="icons d-flex justify-content-around flex-wrap gap-3">
+          <a href="#" title="GitHub">
+            <img src="images/github (1).png" alt="GitHub" style="width: 35px;">
+          </a>
+          <a href="#" title="Mail">
+            <img src="images/mail (1).png" alt="Mail" style="width: 35px;">
+          </a>
+          <a href="#" title="Phone">
+            <img src="images/telephone.png" alt="Phone" style="width: 35px;">
+          </a>
+          <a href="#" title="CV">
+            <img src="images/cv.png" alt="CV" style="width: 35px;">
+          </a>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills container  fade-in">
+    <h2 class="heading text-center mb-5 d-flex justify-content-center flex-wrap">
+      <span>S</span>
+      <span>K</span>
+      <span>I</span>
+      <span>L</span>
+      <span>L</span>
+      <span>S</span>
+    </h2>
+
+    <p class="text-center mb-4">
+      Here are the technologies and tools I work with to bring ideas to life and create exceptional digital experiences.
+    </p>
+
+    <!-- Filter Buttons -->
+    <div class="FilterSkills row justify-content-center text-center g-3 mb-5">
+      <div class="col-6 col-md-3">
+        <button id="0" class="btnFilterSkills active w-100 d-flex align-items-center justify-content-center gap-2">
+          <img src="images/html (1).png" alt="">
+          Frontend
+        </button>
+      </div>
+      <div class="col-6 col-md-3">
+        <button id="1" class="btnFilterSkills w-100 d-flex align-items-center justify-content-center gap-2">
+          <img src="images/database.png" alt="">
+          Backend
+        </button>
+      </div>
+      <div class="col-6 col-md-3">
+        <button id="2" class="btnFilterSkills w-100 d-flex align-items-center justify-content-center gap-2">
+          <img src="images/wrench.png" alt="">
+          Tools
+        </button>
+      </div>
+      <div class="col-6 col-md-3">
+        <button id="3" class="btnFilterSkills w-100 d-flex align-items-center justify-content-center gap-2">
+          <img src="images/skill.png" alt="">
+          Soft Skills
+        </button>
+      </div>
+    </div>
+
+
+
+    <!-- Skills Grid -->
+    <div class="skillsContainer row justify-content-center g-4">
+      <div class="col-9 col-sm-5 col-md-3 col-lg-3 text-center fade-in">
+        <div class="skill" onclick="openModal('JavaScript', 'Advanced' , '3 years of experience in frontend and backend')">
+          <img src="images/js.png" alt="JavaScript">
+          <span>JavaScript</span>
+        </div>
+      </div>
+      <div class="col-9 col-sm-5 col-md-3 col-lg-3 text-center fade-in">
+        <div class="skill"
+          onclick="openModal('Bootstrap', 'Advanced' , '2 years of experience in creating responsive designs.')">
+          <img src="images/bootstrap.png" alt="Bootstrap" class="img-fluid">
+          <span>Bootstrap</span>
+        </div>
+      </div>
+      <div class="col-9 col-sm-5 col-md-3 col-lg-3 text-center fade-in">
+        <div class="skill" onclick="openModal('CSS', 'Advanced' , '4 years of experience in styling and animations.')">
+          <img src="images/css-3.png" alt="CSS" class="img-fluid">
+          <span>CSS</span>
+        </div>
+      </div>
+      <div class="col-9 col-sm-5 col-md-3 col-lg-3 text-center fade-in">
+        <div class="skill"
+          onclick="openModal('HTML', 'Advanced' , '4 years of experience in building web page structures.')">
+          <img src="images/html.png" alt="HTML" class="img-fluid">
+          <span>HTML</span>
+        </div>
+      </div>
+      <div class="col-9 col-sm-5 col-md-3 col-lg-3 text-center fade-in">
+        <div class="skill"
+          onclick="openModal('Flutter', 'Beginner' , '6 months of experience in mobile app development.')">
+          <img src="images/fluter.png" alt="Flutter" class="img-fluid">
+          <span>Flutter</span>
+        </div>
+      </div>
+
+      <div class="col-9 col-sm-5 col-md-3 col-lg-3 text-center fade-in">
+        <div class="skill"
+          onclick="openModal('Responsive', 'Intermediate' , '3 years of experience in frontend and backend')">
+          <img src="images/RES.png" alt="Responsive" class="img-fluid">
+          <span>Responsive</span>
+        </div>
+      </div>
+      <div class="col-9 col-sm-5 col-md-3 col-lg-3 text-center fade-in">
+        <div class="skill"
+          onclick="openModal('React', 'Beginner' , '6 months of experience in building interactive UIs.')">
+          <img src="images/react.png" alt="React" class="img-fluid">
+          <span>React</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Modal Title</h3>
+        <button class="close" onclick="closeModal()">×</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <h4 id="level" class="level">level</h4>
+        <p id="content" class="content">content</p>
+      </div>
+      <div class="modal-footer">
+        <button class="close" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="feats" class="feats mt-5 container-fluid col-12 col-sm-12 col-md-9 col-lg-7 fade-in">
+    <!-- Section Title -->
+    <h2 class="heading text-center mb-4 d-flex justify-content-center flex-wrap">
+      <span>F</span>
+      <span>E</span>
+      <span>A</span>
+      <span>T</span>
+      <span>S</span>
+    </h2>
+
+    <!-- Section Description -->
+    <p class="text-center mb-3 w-100"> A showcase of my proud milestones, highlighting projects, creative works, and
+      personal achievements that reflect my skills and growth. </p>
+
+    <!-- Carousel -->
+    <div id="carouselExampleInterval" class="carousel slide m-4" data-bs-ride="carousel">
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1" style="border-radius: 50%; width: 10px ;height: 10px;"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"
+          style="border-radius: 50%; width: 10px ;height: 10px;"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"
+          style="border-radius: 50%; width: 10px ;height: 10px;"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3" aria-label="Slide 4"
+          style="border-radius: 50%; width: 10px ;height: 10px;"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="4" aria-label="Slide 5"
+          style="border-radius: 50%; width: 10px ;height: 10px;"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="5" aria-label="Slide 6"
+          style="border-radius: 50%; width: 10px ;height: 10px;"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="6" aria-label="Slide 7"
+          style="border-radius: 50%; width: 10px ;height: 10px;"></button>
+      </div>
+
+      <!-- Carousel Items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="images/gitex.jpg" class="d-block w-100 img-fluid" alt="Project 1">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-1">
+            <h6>Gitex Africa 2025</h6>
+            <p style="font-size: 14px; ">Explored innovations in education, joined workshops, and connected with global
+              professionals</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="images/teamAgadir.jpeg" class="d-block w-100 img-fluid" alt="Project 2">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-1">
+            <h6>ENSA Agadir</h6>
+            <p style="font-size: 14px;">Took part in a robotics competition, showcasing teamwork and innovation.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="images/motawi3.jpg" class="d-block w-100 img-fluid" alt="Project 3">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-1">
+            <h6>Motatawi3</h6>
+            <p style="font-size: 14px;">Contributed to a volunteer program, supporting community initiatives.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="images/ro.jpg" class="d-block w-100 img-fluid" alt="Project 3">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded ">
+            <h6>Robotics</h6>
+            <p style="font-size: 14px;">Competed in a local robotics competition at CMC</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="images/tournwat.jpg" class="d-block w-100 img-fluid" alt="Project 3">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-1">
+            <h6>Club Sportif</h6>
+            <p style="font-size: 14px;">Semi-finalist with my team in the CMC Sports Club tournament.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="images/expoGming.jpg" class="d-block w-100 img-fluid" alt="Project 3">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-1">
+            <h6>Gaming Expo</h6>
+            <p style="font-size: 14px;">Participated in the Gaming Expo, exploring the latest trends and innovations in
+              gaming.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="images/forum2.jpg" class="d-block w-100 img-fluid" alt="Project 3">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-1">
+            <h6>Forum CMC</h6>
+            <p style="font-size: 14px;">Participated in the 1st edition of the Regional Forum on Careers and Skills
+              (ASK).</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon rounded-circle p-3" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon rounded-circle p-3" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </section>
+
+  <section id="myProject" class="mt-5 container  fade-in">
+    <!-- Section Title -->
+    <h2 class="heading text-center mb-4 d-flex justify-content-center flex-wrap">
+      <span>P</span>
+      <span>R</span>
+      <span>O</span>
+      <span>J</span>
+      <span>E</span>
+      <span>C</span>
+      <span>T</span>
+      <span>S</span>
+    </h2>
+    <p class="text-center">A selection of projects that showcase my skills and experience in web development, from
+      concept to deployment.</p>
+
+    <div class="projects mt-5">
+      <div class="row row1">
+        <!-- Card 1 -->
+        <div class="box col-12 col-sm-12 col-md-6 col-lg-4 mb-4 fade-in">
+          <div class="card h-100" style="background-color: #3A3A3A; color: #fff; border: solid 1px #fff;">
+            <img src="images/ProjectsImages/akdital.png" class="card-img-top" alt="akdital project">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Akdital Project</h5>
+              <p class="card-text" style="color: #d9d9d9c4;">
+
+                A responsive PHP-based medical services website for Akdital, built with HTML, CSS (Bootstrap), JavaScript, and a PHP-MySQL backend.
+              <div class="lnagUse mb-3">
+                <span class="lang">PHP</span><span class="lang">CSS</span><span class="lang">HTML</span><span
+                  class="lang">MySql</span><span class="lang">JavaScript</span>
+              </div>
+
+              <!-- Push button to bottom -->
+              <div class="mt-auto">
+                <a href="https://github.com/faysaljs/akdital-project" class="btn col-12" style="background-color: #000; font-weight: bold;">
+                  <img src="images/github (1).png" alt="" style="margin-right: 5px;"> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="box col-12 col-sm-12 col-md-6 col-lg-4 mb-4 fade-in">
+          <div class="card h-100" style="background-color: #3A3A3A; color: #fff; border: solid 1px #fff;">
+            <img src="images/ProjectsImages/travel.png" class="card-img-top" alt="akdital project">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Let's Travel</h5>
+              <p class="card-text" style="color: #d9d9d9c4;">
+                Travel booking site for Moroccan destinations with packages, reviews, booking, and login, built using HTML, CSS, JS, and PHP.              </p>
+
+              <div class="lnagUse mb-3">
+                <span class="lang">MySql</span><span class="lang">PHP</span><span class="lang">HTML</span> <span class="lang">JavaScript</span> <span class="lang">CSS</span>
+              </div>
+
+              <!-- Push button to bottom -->
+              <div class="mt-auto">
+                <a href="https://github.com/faysaljs/travel-project" class="btn col-12" style="background-color: #000; font-weight: bold;">
+                  <img src="images/github (1).png" alt="" style="margin-right: 5px;"> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="box col-12 col-sm-12 col-md-6 col-lg-4 mb-4 fade-in">
+          <div class="card h-100" style="background-color: #3A3A3A; color: #fff; border: solid 1px #fff;">
+            <img src="images/ProjectsImages/tic_tac_toe_main.png" class="card-img-top" alt="akdital project">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Tic Tac Toe</h5>
+              <p class="card-text" style="color: #d9d9d9c4;">
+                Modern PyQt5 Tic-Tac-Toe with 3 AI difficulties, animated UI, sounds, looping music, and score tracking.              </p>
+
+              <div class="lnagUse mb-3">
+                <span class="lang">Python</span><span class="lang">PyQt5</span>
+              </div>
+
+              <!-- Push button to bottom -->
+              <div class="mt-auto">
+                <a href="https://github.com/faysaljs/tic_tac_toe" class="btn col-12" style="background-color: #000; font-weight: bold;">
+                  <img src="images/github (1).png" alt="" style="margin-right: 5px;"> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Card 4 -->
+        <div id="moreProjects" class="box col-12 col-sm-12 col-md-6 col-lg-4 mb-4 fade-in">
+          <div class="card h-100" style="background-color: #3A3A3A; color: #fff; border: solid 1px #fff;">
+            <img src="images/ProjectsImages/examBreak .png" class="card-img-top" alt="akdital project">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text" style="color: #d9d9d9c4;">
+                PHP & MySQL app for collecting and storing student exam feedback.              </p>
+
+              <div class="lnagUse mb-3">
+                <span class="lang">PHP</span><span class="lang">HTML</span><span class="lang">CSS</span><span
+                  class="lang">MySqli</span>
+              </div>
+
+              <!-- Push button to bottom -->
+              <div class="mt-auto">
+                <a href="https://github.com/faysaljs/examFeedback" class="btn col-12" style="background-color: #000; font-weight: bold;">
+                  <img src="images/github (1).png" alt="" style="margin-right: 5px;"> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Card 5 -->
+        <div id="moreProjects" class="box col-12 col-sm-12 col-md-6 col-lg-4 mb-4 fade-in">
+          <div class="card h-100" style="background-color: #3A3A3A; color: #fff; border: solid 1px #fff;">
+            <img src="images/ProjectsImages/welcome.png" class="card-img-top" alt="akdital project">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text" style="color: #d9d9d9c4;">
+                Some quick example text to build on the card title and make up the bulk of the card’s content.
+              </p>
+
+              <div class="lnagUse mb-3">
+                <span class="lang">php</span><span class="lang">php</span><span class="lang">php</span><span
+                  class="lang">php</span>
+              </div>
+
+              <!-- Push button to bottom -->
+              <div class="mt-auto">
+                <a href="#" class="btn col-12" style="background-color: #000; font-weight: bold;">
+                  <img src="images/github (1).png" alt="" style="margin-right: 5px;"> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Card 6 -->
+        <div id="moreProjects" class="box col-12 col-sm-12 col-md-6 col-lg-4 mb-4 fade-in">
+          <div class="card h-100" style="background-color: #3A3A3A; color: #fff; border: solid 1px #fff;">
+            <img src="images/ProjectsImages/hotel .png" class="card-img-top" alt="akdital project">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text" style="color: #d9d9d9c4;">
+                Some quick example text to build on the card title and make up the bulk of the card’s content.
+              </p>
+
+              <div class="lnagUse mb-3">
+                <span class="lang">php</span><span class="lang">php</span><span class="lang">php</span><span
+                  class="lang">php</span>
+              </div>
+
+              <!-- Push button to bottom -->
+              <div class="mt-auto">
+                <a href="#" class="btn col-12" style="background-color: #000; font-weight: bold;">
+                  <img src="images/github (1).png" alt="" style="margin-right: 5px;"> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Card 7 -->
+        <div id="moreProjects" class="box col-12 col-sm-12 col-md-6 col-lg-4 mb-4 fade-in">
+          <div class="card h-100" style="background-color: #3A3A3A; color: #fff; border: solid 1px #fff;">
+            <img src="images/ProjectsImages/wether.png" class="card-img-top" alt="akdital project">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text" style="color: #d9d9d9c4;">
+                Some quick example text to build on the card title and make up the bulk of the card’s content.
+              </p>
+
+              <div class="lnagUse mb-3">
+                <span class="lang">php</span><span class="lang">php</span><span class="lang">php</span><span
+                  class="lang">php</span>
+              </div>
+
+              <!-- Push button to bottom -->
+              <div class="mt-auto">
+                <a href="#" class="btn col-12" style="background-color: #000; font-weight: bold;">
+                  <img src="images/github (1).png" alt="" style="margin-right: 5px;"> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Card 8 -->
+        <div id="moreProjects" class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4 fade-in">
+          <div class="card h-100">
+            <img src="images/ProjectsImages/todo.png" class="card-img-top" alt="akdital project">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text" style="color: #d9d9d9c4;">
+                Some quick example text to build on the card title and make up the bulk of the card’s content.
+              </p>
+
+              <div class="lnagUse mb-3">
+                <span class="lang">php</span><span class="lang">php</span><span class="lang">php</span><span
+                  class="lang">php</span>
+              </div>
+
+              <!-- Push button to bottom -->
+              <div class="mt-auto">
+                <a href="#" class="btn col-12" style="background-color: #000; font-weight: bold;">
+                  <img src="images/github (1).png" alt="" style="margin-right: 5px;"> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Card 9 -->
+        <div id="moreProjects" class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4 fade-in">
+          <div class="card h-100">
+            <img src="images/ProjectsImages/forum.png" class="card-img-top" alt="akdital project">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text" style="color: #d9d9d9c4;">
+                Some quick example text to build on the card title and make up the bulk of the card’s content.
+              </p>
+
+              <div class="lnagUse mb-3">
+                <span class="lang">php</span><span class="lang">php</span><span class="lang">php</span><span
+                  class="lang">php</span>
+              </div>
+
+              <!-- Push button to bottom -->
+              <div class="mt-auto">
+                <a href="#" class="btn col-12" style="background-color: #000; font-weight: bold;">
+                  <img src="images/github (1).png" alt="" style="margin-right: 5px;"> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Card 8 -->
+        <div id="moreProjects" class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4 fade-in">
+          <div class="card h-100">
+            <img src="images/ProjectsImages/youtb.png" class="card-img-top" alt="akdital project">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text" style="color: #d9d9d9c4;">
+                Some quick example text to build on the card title and make up the bulk of the card’s content.
+              </p>
+
+              <div class="lnagUse mb-3">
+                <span class="lang">php</span><span class="lang">php</span><span class="lang">php</span><span
+                  class="lang">php</span>
+              </div>
+
+              <!-- Push button to bottom -->
+              <div class="mt-auto">
+                <a href="#" class="btn col-12" style="background-color: #000; font-weight: bold;">
+                  <img src="images/github (1).png" alt="" style="margin-right: 5px;"> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <button class="btn seeMore " id="seeMoreProjects">See More Projects <img src="images/plus.png" alt=""></button>
+        <button class="btn seeMore " id="seeLessProjects">See Less Projects <img src="images/show-less.png" alt=""></button>
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

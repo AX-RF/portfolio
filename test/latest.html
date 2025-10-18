@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faysal Elallaoui - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #111, #333);
+  color: white;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: transparent;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 20px;
+  color: #f00;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #f66;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #0ff;
+}
+
+.cv-btn {
+  background: white;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cv-btn:hover {
+  background: #0ff;
+  color: black;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px 60px 60px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: cyan;
+}
+
+.hero-text .name {
+  color: lime;
+  font-weight: 700;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #0ff;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn.download {
+  background: cyan;
+  color: black;
+}
+
+.btn.download:hover {
+  background: #00e6e6;
+}
+
+.btn.contact {
+  background: limegreen;
+  color: black;
+}
+
+.btn.contact:hover {
+  background: green;
+}
+
+/* Hero Image */
+.hero-img img {
+  width: 300px;
+  border-radius: 15px;
+  filter: grayscale(100%);
+}
+
+/* Circle Text */
+.circle-text {
+  position: absolute;
+  top: 30%;
+  left: -40px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-size: 1.2rem;
+  color: #666;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      &lt; <span>Elallaoui</span> <strong>Faysal</strong> /&gt;
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="cv-btn"><i class="fa fa-download"></i> Download CV</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="circle-text">WELCOME TO MY WORLD</div>
+    <div class="hero-text">
+      <h2>Hi, I'm <span class="name">Faysal Elallaoui</span></h2>
+      <p>Web development student passionate about building clean, functional, and secure web applications.</p>
+      <div class="buttons">
+        <a href="#" class="btn download">Download CV</a>
+        <a href="#contact" class="btn contact">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="your-photo.png" alt="Faysal Elallaoui">
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Popup with JS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #2c2c2c;
+      color: white;
+      padding: 40px;
+    }
+
+    .skillsContainer {
+      display: flex;
+      gap: 20px;
+    }
+
+    .skill {
+      padding: 12px 20px;
+      background: #4CAF50;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .skill:hover {
+      background: #45a049;
+    }
+
+    /* Popup (Modal) Background */
+    .modal {
+      display: none; 
+      position: fixed; 
+      z-index: 1000; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%;
+      background-color: rgba(0,0,0,0.6); 
+      backdrop-filter: blur(2px);
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: #1e1e1e;
+      margin: 15% auto; 
+      padding: 20px;
+      border-radius: 8px;
+      width: 400px;
+      color: white;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #444;
+      padding-bottom: 10px;
+    }
+
+    .modal-body {
+      margin: 20px 0;
+    }
+
+    .modal-footer {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .close, .btn {
+      cursor: pointer;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .close {
+      background: #555;
+      color: white;
+    }
+
+    .btn {
+      background: #4CAF50;
+      color: white;
+    }
+
+    .btn:hover {
+      background: #45a049;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2>Click a skill to open popup</h2>
+  <div class="skillsContainer">
+    <button class="skill" onclick="openModal('JavaScript', 'Intermediate: 3 years of experience in frontend and backend')">
+      JavaScript
+    </button>
+    <button class="skill" onclick="openModal('Python', 'Beginner: 1 year of scripting and automation')">
+      Python
+    </button>
+    <button class="skill" onclick="openModal('HTML/CSS', 'Advanced: 4 years of responsive design experience')">
+      HTML/CSS
+    </button>
+  </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Modal Title</h3>
+        <button class="close" onclick="closeModal()">×</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        Modal body text goes here.
+      </div>
+      <div class="modal-footer">
+        <button class="close" onclick="closeModal()">Close</button>
+        <button class="btn">Save changes</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(title, body) {
+      document.getElementById("modalTitle").innerText = title;
+      document.getElementById("modalBody").innerText = body;
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+      const modal = document.getElementById("myModal");
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+  </script>
+
+</body>
+</html>
