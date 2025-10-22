@@ -91,15 +91,15 @@ const Hero = () => {
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-5xl font-bold mt-4">
-            <span className=" text-neon-blue">Elallaoui Faysal</span>
+          <h1 className="text-3xl md:text-5xl font-bold mt-4">
+          <span className="text-neon-blue">Elallaoui Faysal</span>
           </h1>
-          <h2 className="text-5xl md:text-2xl font-bold  mt-2">
+          <h2 className="text-xl md:text-2xl font-bold mt-2">
             <span className="text-neon-cyan text-glow">Junior Mobile Apps </span>
             <span className="text-white">Developer</span>
           </h2>
 
-          <p className="text-xl md:text-2xl text-gray-400 mb-8 max-w-2xl mx-auto mt-4">
+          <p className="text-base md:text-2xl text-gray-400 mb-8 max-w-2xl mx-auto mt-4">
             Passionate trainee crafting beautiful mobile experiences.
           </p>
 
