@@ -343,7 +343,7 @@ const Projects = () => {
                     </div>
                   </a>
                   <a
-                    href="/Faysal_Elalaoui_Developer_App.pdf"
+                    href="/Elalaoui_Faysal_Developer_App.pdf"
                     download
                     className="flex items-center gap-2 px-5 py-2.5 bg-cyan-500 text-gray-900 font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-400/50 hover:scale-105 transition-all duration-300 whitespace-nowrap"
                   >
